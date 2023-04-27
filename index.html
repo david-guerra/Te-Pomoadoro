@@ -7,6 +7,7 @@
     <title>Te Pomoadoro</title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <div class="big-container">
         <div class="web-title">
             <h1>Te Pomoadoro</h1>
@@ -26,6 +27,17 @@
                 <button id = "run-state" class="main-button">START</button>
                 <button id = "switch" class="main-button">BREAK</button>
                 <button id = "reset" class="main-button">RESET</button>
+            </div>
+        </div>
+        <div id = "controls">
+            <div class="slide-container">
+                <h3>Study Time :<br><span id = "study-time-span">25</span> min</h3>
+                <input class = "slider" type="range" min="1" max="60" value="25" class="slider" id="study-slider">
+
+            </div>
+            <div class="slide-container">
+                <h3>Break Time :<br><span id = "break-time-span">5</span> min</h3>
+                <input class="slider" type="range" min="1" max="60" value="5" class="slider" id="break-slider">
             </div>
         </div>
         <div class="teclas">
