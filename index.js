@@ -20,16 +20,11 @@ function setSliderTime(){
     timeBreak = breakSlider.value;
     document.getElementById("study-time-span").innerHTML = studySlider.value;
     document.getElementById("break-time-span").innerHTML = breakSlider.value;
-
+    console.log("study: "+timeStudy);
+    console.log("break: "+timeBreak)
     resetTimer();
 }
-function updateSliderTextStudy(val){
-    console.log("HOla");
-    document.getElementById("study-time-span").innerHTML = val;
-}
-function updateSliderTextBreak(val){
-    document.getElementById("break-time-span").innerHTML = val;
-}
+
 function resetTimer(){
     if (timerStatus === 'STUDY TIME!'){
         setTime(timeStudy);
