@@ -97,7 +97,7 @@ function toggleTimer(){
     }
 }
 function main(){
-    alarm = new Audio('/sounds/callto.mp3');
+    alarm = new Audio('./sounds/callto.mp3');
     displayStatus = document.getElementById("status");
     minutesTimer = document.getElementById("minutes");
     secondsTimer = document.getElementById("seconds");
